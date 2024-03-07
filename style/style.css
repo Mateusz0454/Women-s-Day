@@ -1,0 +1,44 @@
+
+body{
+    background-image: url('../img/Twinkle.svg');
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+section {
+    color: white;
+    width: 500px;
+    height: 350px;
+    background-color: #F28585;
+    text-align: center;
+    font-size: 22px;
+   font-family: raleway;
+}
+
+p{
+    margin-top: 90px;
+}
+
+@keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, -12px);
+    }
+    100% {
+      transform: translate(0, 2px);
+    }
+  }
