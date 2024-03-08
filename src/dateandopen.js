@@ -12,7 +12,7 @@ function OpeningPage() {
     const seconds = RestOfMinute % 60;
 
     if (now >= DateOfOpening) {
-        const url = "../page/choice.html";
+        const url = "./page/choice.html";
         window.open(url, '_self');
     } else {
         setTimeout(OpeningPage, 1000);
